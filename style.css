@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+body {
+	width: 40em;
+	padding: 1em;
+	background: #f3f3f3;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+.hebrew {
+	font-family: New Peninim MT, SBL Hebrew, Ezra SIL;
+	font-size: 2.3em;
+}
+
+.info {
+	font-size: 0.8em;
+}
+
+#task {
+	padding: 0.5em;
+	background: #d8d8d8;
+}
+
+#nav {
+	margin-top: 0.5em;
+}
+
+#count {
+	text-align: right;
+}
+
+.correct {
+	color: #00ff00;
+	font-size: 2em;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Hebrew Unicode input exercises</title>
+<style type="text/css" media="all">
+@import url('https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/base/jquery-ui.css');
+@import url('style.css');
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+<script type="text/javascript" src="tasks.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<h1>Hebrew Unicode input exercises</h1>
+<p>v0.2.1</p>
+<div id="content">
+	<div id="task">
+		<h2 id="title"></h2>
+		<p id="text"></p>
+		<form id="inputForm" action="#">
+			<label>Input:</label> <input id="input" class="hebrew" attr="text"/>
+		</form>
+		<div id="nav">
+			<!-- <a id="prev" href="#">Previous</a> -->
+			<span id="correct" class="correct">Correct!</span>
+			<div id="next">Next</div>
+		</div>
+		<p id="count"><span id="taskNo"></span>/<span id="total"></span></p>
+	</div>
+	<p class="info"><em>Windows and Linux users:</em> It's highly recommended to install <a href="http://www.sbl-site.org/educational/BiblicalFonts_SBLHebrew.aspx">SBL Hebrew</a> or <a href="http://scripts.sil.org/EzraSIL_Home">Ezra SIL</a>.</p>
+	<p class="info">You can give the input field focus by clicking, but you must use the arrow keys to place the cursor (not working in Internet Explorer). And you can't complete deletion assignments by selecting text – you must use Delete or Backspace.</p>
+	<p class="info">Notice that the cursor will be placed at the end of the text when starting.</p>
+	<p class="info"><em>Tip:</em> You can quickly shift between Hebrew and your ordinary keyboard layout with keyboard shortcuts (see the keyboard settings for your operating system).</p>
+</div>
+<div class="info">
+	<h2>About cursor movement</h2>
+	<p>
+	Many programs use <em>logical</em> cursor movement as default, in which the cursor follows the logical order of the characters: Left arrow moves towards the beginning of the text and right arrow moves towards the end of the text.<br/>
+	When writing in mixed direction, as in the Roman/Hebrew case, this is contrary to <em>visual</em> cursor movement, in which the arrow keys moves left/right on the screen "as you'd expect".
+	</p>
+	<p>
+	Some programs let you choose, but not all, e.g. Logos. The point of these exercises are mostly to experiece the quirks of writing mixed Roman and Hebrew characters.
+	</p>
+	<p>
+	Not all the following information about various programs is verified:
+	</p>
+	<h3>Internet Explorer</h3>
+	<p>
+		Only <em>logical</em> cursor movement supported.
+	</p>
+	<h3>Safari and Google Chrome</h3>
+	<p>
+		Only <em>visual</em> cursor movement supported. Not recommended for these exercises.
+	</p>
+	<h3>Firefox</h3>
+	<p>
+		<em>Visual</em> cursor movement is default, but you can switch to <em>logical</em> this way:
+		<ol>
+			<li>Enter the following address: <em>about:config</em></li>
+			<li>Find <em>bidi.edit.caret_movement_style</em> (use the filter).</li>
+			<li>Double-click and set the value to <em>0</em> instead of <em>2</em>.</li>
+		</ol>
+		Also set <em>bidi.edit.delete_immediately</em> to <em>true</em> to equate the behavior of text editors.
+	</p>
+	<h3>Microsoft Word</h3>
+	<p>
+		<em>Logical</em> cursor movement is default, but a <em>Cursor movement</em> option is found somewhere in <em>Advanced options</em>.<br/>
+		Notice that this does not work when Shift is hold down (for selecting text).
+	</p>
+	<h3>OpenOffice</h3>
+	<p>
+		<em>Logical</em> cursor movement is default, but you can switch to <em>visual</em> cursor movement this way:
+		<ol>
+			<li>Select <em>Tools → Options → Language Settings → Languages</em></li> 
+			<li>Select <em>Enable for complex text layout (CTL)</em> and press <em>OK</em></li>
+			<li>Select <em>Tools → Options → Language Settings → Complex Text Layout</em></li>
+			<li>Set <em>Cursor control</em> to <em>Visual</em>.</li>
+		</ol>
+		Notice that this does not work when Shift is hold down (for selecting text).
+	</p>
+</div>
+<p class="info" style="border-top: solid 1px; padding-top:1em;">
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Licens" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Daniel Lundsgaard Skovenborg</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+</p>
+</body>
+</html>
