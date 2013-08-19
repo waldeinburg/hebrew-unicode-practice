@@ -1,3 +1,13 @@
+Licenses
+========
+
+## Contents
+
+This work by Daniel Lundsgaard Skovenborg is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+
+
+## Source Code
+
 The MIT License (MIT)
 
 Copyright (c) 2013 Daniel Lundsgaard Skovenborg
