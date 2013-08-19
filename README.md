@@ -1,4 +1,4 @@
-hebrew-unicode-practice
+Hebrew Unicode Practice
 =======================
 
 Exercises for the quirks of bidirectional keyboard writing.
